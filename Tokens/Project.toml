@@ -1,0 +1,16 @@
+name = "Tokens"
+uuid = "558dcf93-1ff0-4645-9bae-040e744120bf"
+authors = ["Johannes Blaschke <johannes@blaschke.science>"]
+version = "0.1.0"
+
+[deps]
+Chain = "8be319e6-bccf-4806-a6f7-6fae938471bc"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+JWTs = "d850fbd6-035d-5a70-a269-1ca2e636ac6c"
+Mux = "a975b10e-0019-58db-a62f-e48ff68538c9"
+OpenIDConnect = "195a77af-17c0-520f-ac58-3336c7ea8576"
+Pidfile = "fa939f87-e72e-5be4-a000-7fc836dbe307"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+TimeZones = "f269a46b-ccf7-5d73-abea-4c690281aa53"
