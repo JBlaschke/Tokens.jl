@@ -4,7 +4,7 @@ using JSON
 
 import ..Serializable
 
-function save(p::T, path::String) where {T <: Serializable}
+function save(p::Serializable, path::String)
     open(path, "w") do io
         JSON.print(io, p, 4)
     end
