@@ -9,8 +9,8 @@ abstract type AbstractPolicy <: Serializable end
 @kwdef mutable struct TokenPolicy <: AbstractPolicy
     secrets_path::String
     issuer::String
-    scpoe::Vector{String}
-    extra_request_args::Dict{String, String}
+    scope::Vector{String}
+    extra_request_args::Dict{Symbol, String}
 end
 
 @kwdef mutable struct ExecutionPolicy <: AbstractPolicy

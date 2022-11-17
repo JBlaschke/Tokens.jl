@@ -16,7 +16,7 @@ import ..AbstractToken
 @kwdef mutable struct OAuthSecret <: AbstractSecret
     client_id::String
     redirect_uri::String
-    scope::String
+    scope::Vector{String}
     client_secret::String
     code::String
 end
@@ -25,7 +25,7 @@ end
     access_token::String
     expires_in::Int64
     refresh_token::String
-    scope::String
+    scope::Vector{String}
     token_type::String
 end
 
@@ -126,8 +126,8 @@ end
 
 function start_server()
     config = open("settings.json") do f
-            JSON.parse(f)
-        end
+        JSON.parse(f)
+    end
 
     oidcctx = OIDCCtx(
         String(config["issuer"]),

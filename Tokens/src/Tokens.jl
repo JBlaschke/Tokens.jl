@@ -18,4 +18,7 @@ using .Util
 include("oauth.jl")
 using .OAuth
 
+include("google.jl")
+using .Google
+
 end

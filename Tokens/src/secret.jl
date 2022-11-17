@@ -25,7 +25,7 @@ function claim_token!(
     return lock, response[:date], constructor(;response[:token] ...)
 end
 
-function update_token!(
+function release_token!(
         token::Serializable, date::AbstractString, name::AbstractString,
         lock::Pidfile.LockMonitor, token_policy::TokenPolicy
     )
